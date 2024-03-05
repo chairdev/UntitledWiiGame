@@ -5521,22 +5521,22 @@ Linker script and memory map
                 0x80009218       0x44 C:/devkitPro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.2.0/../../../../powerpc-eabi/lib/crtmain.o
                 0x8000921c                __crtmain
  .text._Z7Warningv
-                0x8000925c       0x90 init.o
+                0x8000925c       0xa8 init.o
                 0x8000925c                _Z7Warningv
  .text.startup._GLOBAL__sub_I_bg
-                0x800092ec       0x30 init.o
+                0x80009304       0x30 init.o
  .text._Z15WiiPowerPressedv
-                0x8000931c       0x10 main.o
-                0x8000931c                _Z15WiiPowerPressedv
+                0x80009334       0x10 main.o
+                0x80009334                _Z15WiiPowerPressedv
  .text._Z6FadeInP13GRRLIB_texImg
-                0x8000932c      0x1b8 main.o
-                0x8000932c                _Z6FadeInP13GRRLIB_texImg
+                0x80009344      0x1b8 main.o
+                0x80009344                _Z6FadeInP13GRRLIB_texImg
  .text._Z7FadeOutP13GRRLIB_texImg
-                0x800094e4      0x1c4 main.o
-                0x800094e4                _Z7FadeOutP13GRRLIB_texImg
+                0x800094fc      0x1c4 main.o
+                0x800094fc                _Z7FadeOutP13GRRLIB_texImg
  .text.startup.main
-                0x800096a8       0xfc main.o
-                0x800096a8                main
+                0x800096c0       0xe4 main.o
+                0x800096c0                main
  .text.ogg_player_thread
                 0x800097a4      0x2b4 oggplayer.o
  .text.ogg_add_callback
@@ -17560,8 +17560,8 @@ Linker script and memory map
 
 .debug_info     0x00000000    0xfdf03
  *(.debug_info)
- .debug_info    0x00000000      0xaa3 init.o
- .debug_info    0x00000aa3    0x14ecc main.o
+ .debug_info    0x00000000      0xb16 init.o
+ .debug_info    0x00000b16    0x14e59 main.o
  .debug_info    0x0001596f     0x13b6 oggplayer.o
  .debug_info    0x00016d25     0x2970 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_core.o)
  .debug_info    0x00019695     0x2630 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_render.o)
@@ -17694,8 +17694,8 @@ Linker script and memory map
 
 .debug_abbrev   0x00000000    0x1c5a3
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x29b init.o
- .debug_abbrev  0x0000029b      0x481 main.o
+ .debug_abbrev  0x00000000      0x2b3 init.o
+ .debug_abbrev  0x000002b3      0x469 main.o
  .debug_abbrev  0x0000071c      0x410 oggplayer.o
  .debug_abbrev  0x00000b2c      0x4e5 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_core.o)
  .debug_abbrev  0x00001011      0x3e6 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_render.o)
@@ -17826,139 +17826,139 @@ Linker script and memory map
  .debug_abbrev  0x0001c026      0x41d C:/devkitPro/libogc/lib/wii\libogc.a(usbgecko.o)
  .debug_abbrev  0x0001c443      0x160 C:/devkitPro/libogc/lib/wii\libogc.a(network_common.o)
 
-.debug_line     0x00000000    0x93f73
+.debug_line     0x00000000    0x93f7e
  *(.debug_line)
- .debug_line    0x00000000      0x414 init.o
- .debug_line    0x00000414      0xa33 main.o
- .debug_line    0x00000e47      0xc74 oggplayer.o
- .debug_line    0x00001abb     0x159b C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_core.o)
- .debug_line    0x00003056     0x11b2 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_render.o)
- .debug_line    0x00004208     0x117d C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_texEdit.o)
- .debug_line    0x00005385      0x7eb C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_ttf.o)
- .debug_line    0x00005b70     0x2928 C:/devkitPro/portlibs/ppc/lib\libpngu.a(pngu.o)
- .debug_line    0x00008498      0x8b5 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdapimin.o)
- .debug_line    0x00008d4d     0x10c6 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdapistd.o)
- .debug_line    0x00009e13      0x4ea C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdatasrc.o)
- .debug_line    0x0000a2fd      0x9e6 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdinput.o)
- .debug_line    0x0000ace3     0x26b5 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmarker.o)
- .debug_line    0x0000d398      0xcf6 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmaster.o)
- .debug_line    0x0000e08e     0x24b4 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmerge.o)
- .debug_line    0x00010542     0x1660 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdphuff.o)
- .debug_line    0x00011ba2      0x4aa C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdpostct.o)
- .debug_line    0x0001204c      0xc95 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdsample.o)
- .debug_line    0x00012ce1      0x46b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jerror.o)
- .debug_line    0x0001314c     0x1d53 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jquant1.o)
- .debug_line    0x00014e9f     0x375b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jquant2.o)
- .debug_line    0x000185fa      0x22a C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jutils.o)
- .debug_line    0x00018824     0x1a3e C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jmemmgr.o)
- .debug_line    0x0001a262      0x2ac C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jmemnobs.o)
- .debug_line    0x0001a50e     0x1524 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdarith.o)
- .debug_line    0x0001ba32      0x7e0 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jsimd.o)
- .debug_line    0x0001c212      0x233 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jcomapi.o)
- .debug_line    0x0001c445     0x394c C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdcoefct.o)
- .debug_line    0x0001fd91     0x256b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdcolor.o)
- .debug_line    0x000222fc     0x105c C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jddctmgr.o)
- .debug_line    0x00023358     0x2518 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdhuff.o)
- .debug_line    0x00025870      0x9fc C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmainct.o)
- .debug_line    0x0002626c      0x589 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctflt.o)
- .debug_line    0x000267f5      0x596 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctfst.o)
- .debug_line    0x00026d8b     0x52dc C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctint.o)
- .debug_line    0x0002c067      0xc14 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctred.o)
- .debug_line    0x0002cc7b       0x9e C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jaricom.o)
- .debug_line    0x0002cd19     0x2b2f C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jccolor-altivec.o)
- .debug_line    0x0002f848     0x220c C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jcgray-altivec.o)
- .debug_line    0x00031a54      0x55f C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jcsample-altivec.o)
- .debug_line    0x00031fb3     0x198f C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdcolor-altivec.o)
- .debug_line    0x00033942     0x3081 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmerge-altivec.o)
- .debug_line    0x000369c3      0x860 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdsample-altivec.o)
- .debug_line    0x00037223      0x46b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jfdctfst-altivec.o)
- .debug_line    0x0003768e      0x6c4 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jfdctint-altivec.o)
- .debug_line    0x00037d52      0x6ad C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctfst-altivec.o)
- .debug_line    0x000383ff      0x70a C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctint-altivec.o)
- .debug_line    0x00038b09      0x6d0 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jquanti-altivec.o)
- .debug_line    0x000391d9      0x73c C:/devkitPro/libogc/lib/wii\libfat.a(libfat.o)
- .debug_line    0x00039915     0x195d C:/devkitPro/libogc/lib/wii\libfat.a(directory.o)
- .debug_line    0x0003b272      0x293 C:/devkitPro/libogc/lib/wii\libfat.a(filetime.o)
- .debug_line    0x0003b505      0x891 C:/devkitPro/libogc/lib/wii\libfat.a(file_allocation_table.o)
- .debug_line    0x0003bd96      0x1ee C:/devkitPro/libogc/lib/wii\libfat.a(disc.o)
- .debug_line    0x0003bf84     0x19c4 C:/devkitPro/libogc/lib/wii\libfat.a(fatfile.o)
- .debug_line    0x0003d948      0xac0 C:/devkitPro/libogc/lib/wii\libfat.a(cache.o)
- .debug_line    0x0003e408      0xe4d C:/devkitPro/libogc/lib/wii\libfat.a(fatdir.o)
- .debug_line    0x0003f255      0xd33 C:/devkitPro/libogc/lib/wii\libfat.a(partition.o)
- .debug_line    0x0003ff88     0x2a6a C:/devkitPro/libogc/lib/wii\libwiiuse.a(wpad.o)
- .debug_line    0x000429f2      0x777 C:/devkitPro/libogc/lib/wii\libwiiuse.a(motion_plus.o)
- .debug_line    0x00043169      0x9e6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(dynamics.o)
- .debug_line    0x00043b4f      0x943 C:/devkitPro/libogc/lib/wii\libwiiuse.a(io.o)
- .debug_line    0x00044492      0x7a9 C:/devkitPro/libogc/lib/wii\libwiiuse.a(io_wii.o)
- .debug_line    0x00044c3b     0x1683 C:/devkitPro/libogc/lib/wii\libwiiuse.a(ir.o)
- .debug_line    0x000462be      0x661 C:/devkitPro/libogc/lib/wii\libwiiuse.a(nunchuk.o)
- .debug_line    0x0004691f      0x4a6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(wiiboard.o)
- .debug_line    0x00046dc5      0xdd6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(wiiuse.o)
- .debug_line    0x00047b9b      0x4c6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(speaker.o)
- .debug_line    0x00048061      0x834 C:/devkitPro/libogc/lib/wii\libwiiuse.a(classic.o)
- .debug_line    0x00048895      0xc57 C:/devkitPro/libogc/lib/wii\libwiiuse.a(events.o)
- .debug_line    0x000494ec      0x43f C:/devkitPro/libogc/lib/wii\libwiiuse.a(guitar_hero_3.o)
- .debug_line    0x0004992b     0x19e4 C:/devkitPro/libogc/lib/wii\libasnd.a(asndlib.o)
- .debug_line    0x0004b30f     0x241b C:/devkitPro/libogc/lib/wii\libbte.a(bte.o)
- .debug_line    0x0004d72a     0x3635 C:/devkitPro/libogc/lib/wii\libbte.a(hci.o)
- .debug_line    0x00050d5f     0x2f69 C:/devkitPro/libogc/lib/wii\libbte.a(l2cap.o)
- .debug_line    0x00053cc8      0x436 C:/devkitPro/libogc/lib/wii\libbte.a(btmemb.o)
- .debug_line    0x000540fe      0x6e8 C:/devkitPro/libogc/lib/wii\libbte.a(btmemr.o)
- .debug_line    0x000547e6      0xab0 C:/devkitPro/libogc/lib/wii\libbte.a(btpbuf.o)
- .debug_line    0x00055296      0x9de C:/devkitPro/libogc/lib/wii\libbte.a(physbusif.o)
- .debug_line    0x00055c74      0x47e C:/devkitPro/libogc/lib/wii\libogc.a(lwp_queue.o)
- .debug_line    0x000560f2     0x21cf C:/devkitPro/libogc/lib/wii\libogc.a(lwp_threads.o)
- .debug_line    0x000582c1     0x12cf C:/devkitPro/libogc/lib/wii\libogc.a(lwp.o)
- .debug_line    0x00059590      0x2fd C:/devkitPro/libogc/lib/wii\libogc.a(lwp_stack.o)
- .debug_line    0x0005988d      0x8cb C:/devkitPro/libogc/lib/wii\libogc.a(lwp_watchdog.o)
- .debug_line    0x0005a158      0x369 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_wkspace.o)
- .debug_line    0x0005a4c1      0x6fe C:/devkitPro/libogc/lib/wii\libogc.a(lwp_objmgr.o)
- .debug_line    0x0005abbf      0x991 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_heap.o)
- .debug_line    0x0005b550      0x1b7 C:/devkitPro/libogc/lib/wii\libogc.a(sys_state.o)
- .debug_line    0x0005b707      0xaf0 C:/devkitPro/libogc/lib/wii\libogc.a(irq.o)
- .debug_line    0x0005c1f7     0x2738 C:/devkitPro/libogc/lib/wii\libogc.a(video.o)
- .debug_line    0x0005e92f      0x90f C:/devkitPro/libogc/lib/wii\libogc.a(mutex.o)
- .debug_line    0x0005f23e     0x3f0f C:/devkitPro/libogc/lib/wii\libogc.a(system.o)
- .debug_line    0x0006314d      0x9c6 C:/devkitPro/libogc/lib/wii\libogc.a(cond.o)
- .debug_line    0x00063b13     0x9f52 C:/devkitPro/libogc/lib/wii\libogc.a(gx.o)
- .debug_line    0x0006da65     0x273b C:/devkitPro/libogc/lib/wii\libogc.a(gu.o)
- .debug_line    0x000701a0      0x719 C:/devkitPro/libogc/lib/wii\libogc.a(audio.o)
- .debug_line    0x000708b9      0x21c C:/devkitPro/libogc/lib/wii\libogc.a(decrementer.o)
- .debug_line    0x00070ad5      0x774 C:/devkitPro/libogc/lib/wii\libogc.a(message.o)
- .debug_line    0x00071249     0x15ec C:/devkitPro/libogc/lib/wii\libogc.a(dsp.o)
- .debug_line    0x00072835     0x1770 C:/devkitPro/libogc/lib/wii\libogc.a(si.o)
- .debug_line    0x00073fa5     0x266b C:/devkitPro/libogc/lib/wii\libogc.a(ipc.o)
- .debug_line    0x00076610      0x913 C:/devkitPro/libogc/lib/wii\libogc.a(timesupp.o)
- .debug_line    0x00076f23      0x361 C:/devkitPro/libogc/lib/wii\libogc.a(lock_supp.o)
- .debug_line    0x00077284      0x431 C:/devkitPro/libogc/lib/wii\libogc.a(sbrk.o)
- .debug_line    0x000776b5      0x63f C:/devkitPro/libogc/lib/wii\libogc.a(malloc_lock.o)
- .debug_line    0x00077cf4      0x5a0 C:/devkitPro/libogc/lib/wii\libogc.a(stm.o)
- .debug_line    0x00078294      0x9e8 C:/devkitPro/libogc/lib/wii\libogc.a(ios.o)
- .debug_line    0x00078c7c     0x252d C:/devkitPro/libogc/lib/wii\libogc.a(es.o)
- .debug_line    0x0007b1a9     0x3007 C:/devkitPro/libogc/lib/wii\libogc.a(usb.o)
- .debug_line    0x0007e1b0      0x6d2 C:/devkitPro/libogc/lib/wii\libogc.a(gcsd.o)
- .debug_line    0x0007e882      0x24b C:/devkitPro/libogc/lib/wii\libogc.a(argv.o)
- .debug_line    0x0007eacd     0x126a C:/devkitPro/libogc/lib/wii\libogc.a(wiisd.o)
- .debug_line    0x0007fd37     0x123c C:/devkitPro/libogc/lib/wii\libogc.a(conf.o)
- .debug_line    0x00080f73     0x18dd C:/devkitPro/libogc/lib/wii\libogc.a(usbstorage.o)
- .debug_line    0x00082850      0xc20 C:/devkitPro/libogc/lib/wii\libogc.a(wiilaunch.o)
- .debug_line    0x00083470      0x19a C:/devkitPro/libogc/lib/wii\libogc.a(lwp_priority.o)
- .debug_line    0x0008360a     0x16b2 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_threadq.o)
- .debug_line    0x00084cbc      0xd57 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_messages.o)
- .debug_line    0x00085a13      0x5bc C:/devkitPro/libogc/lib/wii\libogc.a(lwp_mutex.o)
- .debug_line    0x00085fcf      0x821 C:/devkitPro/libogc/lib/wii\libogc.a(exception.o)
- .debug_line    0x000867f0      0x715 C:/devkitPro/libogc/lib/wii\libogc.a(semaphore.o)
- .debug_line    0x00086f05     0x1983 C:/devkitPro/libogc/lib/wii\libogc.a(pad.o)
- .debug_line    0x00088888     0x2183 C:/devkitPro/libogc/lib/wii\libogc.a(exi.o)
- .debug_line    0x0008aa0b      0xa7c C:/devkitPro/libogc/lib/wii\libogc.a(kprintf.o)
- .debug_line    0x0008b487     0x305a C:/devkitPro/libogc/lib/wii\libogc.a(sdgecko_io.o)
- .debug_line    0x0008e4e1      0x226 C:/devkitPro/libogc/lib/wii\libogc.a(sdgecko_buf.o)
- .debug_line    0x0008e707     0x2014 C:/devkitPro/libogc/lib/wii\libogc.a(network_wii.o)
- .debug_line    0x0009071b     0x12b3 C:/devkitPro/libogc/lib/wii\libogc.a(console.o)
- .debug_line    0x000919ce      0x3fa C:/devkitPro/libogc/lib/wii\libogc.a(lwp_sema.o)
- .debug_line    0x00091dc8       0x82 C:/devkitPro/libogc/lib/wii\libogc.a(console_font_8x16.o)
- .debug_line    0x00091e4a     0x1bde C:/devkitPro/libogc/lib/wii\libogc.a(usbgecko.o)
- .debug_line    0x00093a28      0x54b C:/devkitPro/libogc/lib/wii\libogc.a(network_common.o)
+ .debug_line    0x00000000      0x46d init.o
+ .debug_line    0x0000046d      0x9e5 main.o
+ .debug_line    0x00000e52      0xc74 oggplayer.o
+ .debug_line    0x00001ac6     0x159b C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_core.o)
+ .debug_line    0x00003061     0x11b2 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_render.o)
+ .debug_line    0x00004213     0x117d C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_texEdit.o)
+ .debug_line    0x00005390      0x7eb C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_ttf.o)
+ .debug_line    0x00005b7b     0x2928 C:/devkitPro/portlibs/ppc/lib\libpngu.a(pngu.o)
+ .debug_line    0x000084a3      0x8b5 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdapimin.o)
+ .debug_line    0x00008d58     0x10c6 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdapistd.o)
+ .debug_line    0x00009e1e      0x4ea C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdatasrc.o)
+ .debug_line    0x0000a308      0x9e6 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdinput.o)
+ .debug_line    0x0000acee     0x26b5 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmarker.o)
+ .debug_line    0x0000d3a3      0xcf6 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmaster.o)
+ .debug_line    0x0000e099     0x24b4 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmerge.o)
+ .debug_line    0x0001054d     0x1660 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdphuff.o)
+ .debug_line    0x00011bad      0x4aa C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdpostct.o)
+ .debug_line    0x00012057      0xc95 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdsample.o)
+ .debug_line    0x00012cec      0x46b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jerror.o)
+ .debug_line    0x00013157     0x1d53 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jquant1.o)
+ .debug_line    0x00014eaa     0x375b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jquant2.o)
+ .debug_line    0x00018605      0x22a C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jutils.o)
+ .debug_line    0x0001882f     0x1a3e C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jmemmgr.o)
+ .debug_line    0x0001a26d      0x2ac C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jmemnobs.o)
+ .debug_line    0x0001a519     0x1524 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdarith.o)
+ .debug_line    0x0001ba3d      0x7e0 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jsimd.o)
+ .debug_line    0x0001c21d      0x233 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jcomapi.o)
+ .debug_line    0x0001c450     0x394c C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdcoefct.o)
+ .debug_line    0x0001fd9c     0x256b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdcolor.o)
+ .debug_line    0x00022307     0x105c C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jddctmgr.o)
+ .debug_line    0x00023363     0x2518 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdhuff.o)
+ .debug_line    0x0002587b      0x9fc C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmainct.o)
+ .debug_line    0x00026277      0x589 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctflt.o)
+ .debug_line    0x00026800      0x596 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctfst.o)
+ .debug_line    0x00026d96     0x52dc C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctint.o)
+ .debug_line    0x0002c072      0xc14 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctred.o)
+ .debug_line    0x0002cc86       0x9e C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jaricom.o)
+ .debug_line    0x0002cd24     0x2b2f C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jccolor-altivec.o)
+ .debug_line    0x0002f853     0x220c C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jcgray-altivec.o)
+ .debug_line    0x00031a5f      0x55f C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jcsample-altivec.o)
+ .debug_line    0x00031fbe     0x198f C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdcolor-altivec.o)
+ .debug_line    0x0003394d     0x3081 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdmerge-altivec.o)
+ .debug_line    0x000369ce      0x860 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jdsample-altivec.o)
+ .debug_line    0x0003722e      0x46b C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jfdctfst-altivec.o)
+ .debug_line    0x00037699      0x6c4 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jfdctint-altivec.o)
+ .debug_line    0x00037d5d      0x6ad C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctfst-altivec.o)
+ .debug_line    0x0003840a      0x70a C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jidctint-altivec.o)
+ .debug_line    0x00038b14      0x6d0 C:/devkitPro/portlibs/ppc/lib\libjpeg.a(jquanti-altivec.o)
+ .debug_line    0x000391e4      0x73c C:/devkitPro/libogc/lib/wii\libfat.a(libfat.o)
+ .debug_line    0x00039920     0x195d C:/devkitPro/libogc/lib/wii\libfat.a(directory.o)
+ .debug_line    0x0003b27d      0x293 C:/devkitPro/libogc/lib/wii\libfat.a(filetime.o)
+ .debug_line    0x0003b510      0x891 C:/devkitPro/libogc/lib/wii\libfat.a(file_allocation_table.o)
+ .debug_line    0x0003bda1      0x1ee C:/devkitPro/libogc/lib/wii\libfat.a(disc.o)
+ .debug_line    0x0003bf8f     0x19c4 C:/devkitPro/libogc/lib/wii\libfat.a(fatfile.o)
+ .debug_line    0x0003d953      0xac0 C:/devkitPro/libogc/lib/wii\libfat.a(cache.o)
+ .debug_line    0x0003e413      0xe4d C:/devkitPro/libogc/lib/wii\libfat.a(fatdir.o)
+ .debug_line    0x0003f260      0xd33 C:/devkitPro/libogc/lib/wii\libfat.a(partition.o)
+ .debug_line    0x0003ff93     0x2a6a C:/devkitPro/libogc/lib/wii\libwiiuse.a(wpad.o)
+ .debug_line    0x000429fd      0x777 C:/devkitPro/libogc/lib/wii\libwiiuse.a(motion_plus.o)
+ .debug_line    0x00043174      0x9e6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(dynamics.o)
+ .debug_line    0x00043b5a      0x943 C:/devkitPro/libogc/lib/wii\libwiiuse.a(io.o)
+ .debug_line    0x0004449d      0x7a9 C:/devkitPro/libogc/lib/wii\libwiiuse.a(io_wii.o)
+ .debug_line    0x00044c46     0x1683 C:/devkitPro/libogc/lib/wii\libwiiuse.a(ir.o)
+ .debug_line    0x000462c9      0x661 C:/devkitPro/libogc/lib/wii\libwiiuse.a(nunchuk.o)
+ .debug_line    0x0004692a      0x4a6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(wiiboard.o)
+ .debug_line    0x00046dd0      0xdd6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(wiiuse.o)
+ .debug_line    0x00047ba6      0x4c6 C:/devkitPro/libogc/lib/wii\libwiiuse.a(speaker.o)
+ .debug_line    0x0004806c      0x834 C:/devkitPro/libogc/lib/wii\libwiiuse.a(classic.o)
+ .debug_line    0x000488a0      0xc57 C:/devkitPro/libogc/lib/wii\libwiiuse.a(events.o)
+ .debug_line    0x000494f7      0x43f C:/devkitPro/libogc/lib/wii\libwiiuse.a(guitar_hero_3.o)
+ .debug_line    0x00049936     0x19e4 C:/devkitPro/libogc/lib/wii\libasnd.a(asndlib.o)
+ .debug_line    0x0004b31a     0x241b C:/devkitPro/libogc/lib/wii\libbte.a(bte.o)
+ .debug_line    0x0004d735     0x3635 C:/devkitPro/libogc/lib/wii\libbte.a(hci.o)
+ .debug_line    0x00050d6a     0x2f69 C:/devkitPro/libogc/lib/wii\libbte.a(l2cap.o)
+ .debug_line    0x00053cd3      0x436 C:/devkitPro/libogc/lib/wii\libbte.a(btmemb.o)
+ .debug_line    0x00054109      0x6e8 C:/devkitPro/libogc/lib/wii\libbte.a(btmemr.o)
+ .debug_line    0x000547f1      0xab0 C:/devkitPro/libogc/lib/wii\libbte.a(btpbuf.o)
+ .debug_line    0x000552a1      0x9de C:/devkitPro/libogc/lib/wii\libbte.a(physbusif.o)
+ .debug_line    0x00055c7f      0x47e C:/devkitPro/libogc/lib/wii\libogc.a(lwp_queue.o)
+ .debug_line    0x000560fd     0x21cf C:/devkitPro/libogc/lib/wii\libogc.a(lwp_threads.o)
+ .debug_line    0x000582cc     0x12cf C:/devkitPro/libogc/lib/wii\libogc.a(lwp.o)
+ .debug_line    0x0005959b      0x2fd C:/devkitPro/libogc/lib/wii\libogc.a(lwp_stack.o)
+ .debug_line    0x00059898      0x8cb C:/devkitPro/libogc/lib/wii\libogc.a(lwp_watchdog.o)
+ .debug_line    0x0005a163      0x369 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_wkspace.o)
+ .debug_line    0x0005a4cc      0x6fe C:/devkitPro/libogc/lib/wii\libogc.a(lwp_objmgr.o)
+ .debug_line    0x0005abca      0x991 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_heap.o)
+ .debug_line    0x0005b55b      0x1b7 C:/devkitPro/libogc/lib/wii\libogc.a(sys_state.o)
+ .debug_line    0x0005b712      0xaf0 C:/devkitPro/libogc/lib/wii\libogc.a(irq.o)
+ .debug_line    0x0005c202     0x2738 C:/devkitPro/libogc/lib/wii\libogc.a(video.o)
+ .debug_line    0x0005e93a      0x90f C:/devkitPro/libogc/lib/wii\libogc.a(mutex.o)
+ .debug_line    0x0005f249     0x3f0f C:/devkitPro/libogc/lib/wii\libogc.a(system.o)
+ .debug_line    0x00063158      0x9c6 C:/devkitPro/libogc/lib/wii\libogc.a(cond.o)
+ .debug_line    0x00063b1e     0x9f52 C:/devkitPro/libogc/lib/wii\libogc.a(gx.o)
+ .debug_line    0x0006da70     0x273b C:/devkitPro/libogc/lib/wii\libogc.a(gu.o)
+ .debug_line    0x000701ab      0x719 C:/devkitPro/libogc/lib/wii\libogc.a(audio.o)
+ .debug_line    0x000708c4      0x21c C:/devkitPro/libogc/lib/wii\libogc.a(decrementer.o)
+ .debug_line    0x00070ae0      0x774 C:/devkitPro/libogc/lib/wii\libogc.a(message.o)
+ .debug_line    0x00071254     0x15ec C:/devkitPro/libogc/lib/wii\libogc.a(dsp.o)
+ .debug_line    0x00072840     0x1770 C:/devkitPro/libogc/lib/wii\libogc.a(si.o)
+ .debug_line    0x00073fb0     0x266b C:/devkitPro/libogc/lib/wii\libogc.a(ipc.o)
+ .debug_line    0x0007661b      0x913 C:/devkitPro/libogc/lib/wii\libogc.a(timesupp.o)
+ .debug_line    0x00076f2e      0x361 C:/devkitPro/libogc/lib/wii\libogc.a(lock_supp.o)
+ .debug_line    0x0007728f      0x431 C:/devkitPro/libogc/lib/wii\libogc.a(sbrk.o)
+ .debug_line    0x000776c0      0x63f C:/devkitPro/libogc/lib/wii\libogc.a(malloc_lock.o)
+ .debug_line    0x00077cff      0x5a0 C:/devkitPro/libogc/lib/wii\libogc.a(stm.o)
+ .debug_line    0x0007829f      0x9e8 C:/devkitPro/libogc/lib/wii\libogc.a(ios.o)
+ .debug_line    0x00078c87     0x252d C:/devkitPro/libogc/lib/wii\libogc.a(es.o)
+ .debug_line    0x0007b1b4     0x3007 C:/devkitPro/libogc/lib/wii\libogc.a(usb.o)
+ .debug_line    0x0007e1bb      0x6d2 C:/devkitPro/libogc/lib/wii\libogc.a(gcsd.o)
+ .debug_line    0x0007e88d      0x24b C:/devkitPro/libogc/lib/wii\libogc.a(argv.o)
+ .debug_line    0x0007ead8     0x126a C:/devkitPro/libogc/lib/wii\libogc.a(wiisd.o)
+ .debug_line    0x0007fd42     0x123c C:/devkitPro/libogc/lib/wii\libogc.a(conf.o)
+ .debug_line    0x00080f7e     0x18dd C:/devkitPro/libogc/lib/wii\libogc.a(usbstorage.o)
+ .debug_line    0x0008285b      0xc20 C:/devkitPro/libogc/lib/wii\libogc.a(wiilaunch.o)
+ .debug_line    0x0008347b      0x19a C:/devkitPro/libogc/lib/wii\libogc.a(lwp_priority.o)
+ .debug_line    0x00083615     0x16b2 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_threadq.o)
+ .debug_line    0x00084cc7      0xd57 C:/devkitPro/libogc/lib/wii\libogc.a(lwp_messages.o)
+ .debug_line    0x00085a1e      0x5bc C:/devkitPro/libogc/lib/wii\libogc.a(lwp_mutex.o)
+ .debug_line    0x00085fda      0x821 C:/devkitPro/libogc/lib/wii\libogc.a(exception.o)
+ .debug_line    0x000867fb      0x715 C:/devkitPro/libogc/lib/wii\libogc.a(semaphore.o)
+ .debug_line    0x00086f10     0x1983 C:/devkitPro/libogc/lib/wii\libogc.a(pad.o)
+ .debug_line    0x00088893     0x2183 C:/devkitPro/libogc/lib/wii\libogc.a(exi.o)
+ .debug_line    0x0008aa16      0xa7c C:/devkitPro/libogc/lib/wii\libogc.a(kprintf.o)
+ .debug_line    0x0008b492     0x305a C:/devkitPro/libogc/lib/wii\libogc.a(sdgecko_io.o)
+ .debug_line    0x0008e4ec      0x226 C:/devkitPro/libogc/lib/wii\libogc.a(sdgecko_buf.o)
+ .debug_line    0x0008e712     0x2014 C:/devkitPro/libogc/lib/wii\libogc.a(network_wii.o)
+ .debug_line    0x00090726     0x12b3 C:/devkitPro/libogc/lib/wii\libogc.a(console.o)
+ .debug_line    0x000919d9      0x3fa C:/devkitPro/libogc/lib/wii\libogc.a(lwp_sema.o)
+ .debug_line    0x00091dd3       0x82 C:/devkitPro/libogc/lib/wii\libogc.a(console_font_8x16.o)
+ .debug_line    0x00091e55     0x1bde C:/devkitPro/libogc/lib/wii\libogc.a(usbgecko.o)
+ .debug_line    0x00093a33      0x54b C:/devkitPro/libogc/lib/wii\libogc.a(network_common.o)
 
 .debug_frame
  *(.debug_frame)
@@ -17966,8 +17966,8 @@ Linker script and memory map
 .debug_str      0x00000000    0x1a1ce
  *(.debug_str)
  .debug_str     0x00000000    0x1a1ce init.o
-                                0x595 (size before relaxing)
- .debug_str     0x0001a1ce      0x6ed main.o
+                                0x5b4 (size before relaxing)
+ .debug_str     0x0001a1ce      0x6ce main.o
  .debug_str     0x0001a1ce      0x89c oggplayer.o
  .debug_str     0x0001a1ce      0xa82 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_core.o)
  .debug_str     0x0001a1ce      0x632 C:/devkitPro/portlibs/wii/lib\libgrrlib.a(GRRLIB_render.o)

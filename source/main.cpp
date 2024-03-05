@@ -7,8 +7,6 @@
 #include "oggplayer.h"
 #include <asndlib.h>
 
-#include "init_ogg.h"
-
 bool fadeOut = false;
 
 #define SYS_NOTSET          -1
@@ -81,7 +79,6 @@ int main(int argc, char **argv) {
     SYS_SetPowerCallback(WiiPowerPressed);
 
     Warning();
-    PlayOgg(init_ogg, init_ogg_size, 0, OGG_ONE_TIME);
 
     // Loop forever
     while(1) {
