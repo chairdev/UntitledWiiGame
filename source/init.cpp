@@ -1,9 +1,12 @@
 #include "main.h"
 #include "init.h"
 
-#include "gfx/init/warning.h"
+#include "oggplayer.h"
 
 GRRLIB_texImg *bg = GRRLIB_LoadTexture(warning);
+
+
+
 
 void Warning()
 {

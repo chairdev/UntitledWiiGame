@@ -35,7 +35,7 @@ LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map
 # the order can-be/is critical
 #---------------------------------------------------------------------------------
 LIBS	:= -lgrrlib -lpngu `$(PREFIX)pkg-config freetype2 libpng libjpeg --libs` -lfat
-LIBS	+= -lwiiuse
+LIBS	+= -lwiiuse -lvorbisidec -logg -lasnd
 #LIBS	+= -lmodplay -laesnd
 LIBS	+= -lbte -logc -lm
 
@@ -144,7 +144,15 @@ $(OFILES_SOURCES) : $(HFILES)
 	$(bin2o)
 
 -include $(DEPENDS)
+#---------------------------------------------------------------------------------
+# This rule links in binary data with the .ogg extension
+#---------------------------------------------------------------------------------
+%.ogg.o	%_ogg.h :	%.ogg
+#---------------------------------------------------------------------------------
+	@echo $(notdir $<)
+	$(bin2o)
 
+-include $(DEPENDS)
 #---------------------------------------------------------------------------------
 endif
 #---------------------------------------------------------------------------------

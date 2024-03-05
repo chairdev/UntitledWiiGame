@@ -3,6 +3,12 @@
 #include "main.h"
 #include "init.h"
 
+
+#include "oggplayer.h"
+#include <asndlib.h>
+
+#include "init_ogg.h"
+
 bool fadeOut = false;
 
 #define SYS_NOTSET          -1
@@ -37,7 +43,6 @@ void FadeOut(GRRLIB_texImg *img)
     }
 }
 
-
 void WiiPowerPressed()
 {
     HWButton = SYS_POWEROFF_STANDBY;
@@ -45,6 +50,9 @@ void WiiPowerPressed()
 
 
 int main(int argc, char **argv) {
+    // Initialise the audio subsystem
+	ASND_Init();
+
     // Initialise the Graphics & Video subsystem
     GRRLIB_Init();
 
@@ -67,10 +75,13 @@ int main(int argc, char **argv) {
     // Initialise the Wiimotes
     WPAD_Init();
 
+
+
     // Initialise system callbacks
     SYS_SetPowerCallback(WiiPowerPressed);
 
     Warning();
+    PlayOgg(init_ogg, init_ogg_size, 0, OGG_ONE_TIME);
 
     // Loop forever
     while(1) {
@@ -90,6 +101,7 @@ int main(int argc, char **argv) {
     }
 
     GRRLIB_Exit(); // Be a good boy, clear the memory allocated by GRRLIB
+    StopOgg();
 
     if(HWButton == SYS_POWEROFF_STANDBY)
             SYS_ResetSystem(SYS_POWEROFF_STANDBY, 0, 0);

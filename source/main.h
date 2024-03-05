@@ -7,6 +7,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <asndlib.h>
+#include "oggplayer.h"
+
 #include "gfx/init/warning.h"
 
 extern bool fadeOut;
