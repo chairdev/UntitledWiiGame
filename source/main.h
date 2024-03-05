@@ -12,6 +12,9 @@
 
 #include "gfx/init/warning.h"
 
+extern int screenWidth;
+extern int screenHeight;
+
 extern bool fadeOut;
 
 void FadeIn(GRRLIB_texImg *img);

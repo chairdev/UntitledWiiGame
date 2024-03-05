@@ -2,12 +2,16 @@
 
 #include "main.h"
 #include "init.h"
+#include "titlescreen.h"
 
 
 #include "oggplayer.h"
 #include <asndlib.h>
 
 bool fadeOut = false;
+
+int screenWidth;
+int screenHeight;
 
 #define SYS_NOTSET          -1
 #define SYS_RETURNTOHBMENU   7
@@ -57,6 +61,14 @@ int main(int argc, char **argv) {
      // Set the video mode
     GXRModeObj *rmode = VIDEO_GetPreferredMode(NULL);
     VIDEO_Configure(rmode);
+
+    //get screen width and height in pixels
+    screenWidth = rmode->fbWidth;
+    screenHeight = rmode->efbHeight;
+
+    // Allocate the video memory
+
+
     // Tell the video hardware where our display memory is
 	VIDEO_SetNextFramebuffer(xfb);
 
@@ -79,6 +91,8 @@ int main(int argc, char **argv) {
     SYS_SetPowerCallback(WiiPowerPressed);
 
     Warning();
+    TitleScreen();
+    
 
     // Loop forever
     while(1) {

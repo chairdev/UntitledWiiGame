@@ -28,4 +28,6 @@ void Warning()
         }
         
     }
+
+    GRRLIB_FreeTexture(bg);
 }
