@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "stdlib.h": "c",
-        "oggplayer.h": "c"
+        "oggplayer.h": "c",
+        "vector": "cpp",
+        "xstring": "cpp"
     }
 }

@@ -1,3 +1,5 @@
+using namespace std;
+
 #include <grrlib.h>
 
 #include <stdlib.h>
@@ -10,7 +12,14 @@
 #include <asndlib.h>
 #include "oggplayer.h"
 
+#include <string>
+#include <vector>
+#include "entity.h"
+
 #include "gfx/init/warning.h"
+
+extern std::vector<Entity*> entities;
+
 
 extern int screenWidth;
 extern int screenHeight;
@@ -19,4 +28,5 @@ extern bool fadeOut;
 
 void FadeIn(GRRLIB_texImg *img);
 void FadeOut(GRRLIB_texImg *img);
+void CreateEntity(string name);
 

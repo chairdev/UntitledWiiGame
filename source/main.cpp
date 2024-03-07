@@ -4,11 +4,12 @@
 #include "init.h"
 #include "titlescreen.h"
 
-
 #include "oggplayer.h"
 #include <asndlib.h>
 
 bool fadeOut = false;
+
+std::vector<Entity*> entities = std::vector<Entity*>();
 
 int screenWidth;
 int screenHeight;
@@ -45,6 +46,15 @@ void FadeOut(GRRLIB_texImg *img)
     }
 }
 
+void CreateEntity(string name)
+{
+    //create and run start
+    printf("Creating entity %s\n", name.c_str());
+    Entity *entity = new Entity(name);
+    entity->Start();
+    entities.push_back(entity);
+}
+
 void WiiPowerPressed()
 {
     HWButton = SYS_POWEROFF_STANDBY;
@@ -67,6 +77,8 @@ int main(int argc, char **argv) {
     screenHeight = rmode->efbHeight;
 
     // Allocate the video memory
+    void *xfb = MEM_K0_TO_K1(SYS_AllocateFramebuffer(rmode));
+    
 
 
     // Tell the video hardware where our display memory is
@@ -85,13 +97,10 @@ int main(int argc, char **argv) {
     // Initialise the Wiimotes
     WPAD_Init();
 
-
-
     // Initialise system callbacks
     SYS_SetPowerCallback(WiiPowerPressed);
 
-    Warning();
-    TitleScreen();
+    CreateEntity("Player");
     
 
     // Loop forever
@@ -102,11 +111,15 @@ int main(int argc, char **argv) {
         // If [HOME] was pressed on the first Wiimote, break out of the loop
         if (WPAD_ButtonsDown(0) & WPAD_BUTTON_HOME)  break;
 
-        
-
         if (HWButton != SYS_NOTSET)
         {
             break;
+        }
+
+        //update entities
+        for (uint i = 0; i < entities.size(); i++)
+        {
+            entities[i]->Update();
         }
         
     }
