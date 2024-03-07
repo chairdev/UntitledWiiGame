@@ -1,13 +1,6 @@
 
-
 #include "main.h"
-#include "init.h"
-#include "titlescreen.h"
-
 #include "oggplayer.h"
-#include <asndlib.h>
-
-bool fadeOut = false;
 
 std::vector<Entity*> entities = std::vector<Entity*>();
 
@@ -51,8 +44,10 @@ void CreateEntity(string name)
     //create and run start
     printf("Creating entity %s\n", name.c_str());
     Entity *entity = new Entity(name);
-    entity->Start();
+    entity->Awake();
     entities.push_back(entity);
+    entity->Start();
+    
 }
 
 void WiiPowerPressed()
@@ -78,7 +73,7 @@ int main(int argc, char **argv) {
 
     // Allocate the video memory
     void *xfb = MEM_K0_TO_K1(SYS_AllocateFramebuffer(rmode));
-    
+
 
 
     // Tell the video hardware where our display memory is

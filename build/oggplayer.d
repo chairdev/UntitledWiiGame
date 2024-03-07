@@ -61,7 +61,7 @@ oggplayer.o: \
  C:/devkitPro/libogc/include/ogc/mutex.h \
  C:/devkitPro/libogc/include/ogc/system.h \
  C:/devkitPro/libogc/include/ogc/wiilaunch.h \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/oggplayer.h
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h
 C:/devkitPro/libogc/include/asndlib.h:
 C:/devkitPro/libogc/include/gctypes.h:
 C:/devkitPro/portlibs/ppc/include/tremor/ivorbiscodec.h:
@@ -123,4 +123,4 @@ C:/devkitPro/libogc/include/ogc/usbstorage.h:
 C:/devkitPro/libogc/include/ogc/mutex.h:
 C:/devkitPro/libogc/include/ogc/system.h:
 C:/devkitPro/libogc/include/ogc/wiilaunch.h:
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/oggplayer.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h:

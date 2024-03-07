@@ -1,5 +1,5 @@
 entity.o: C:/Users/TaireruB/Documents/UntitledWiiGame/source/entity.cpp \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/entity.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/entity.h \
  C:/devkitPro/libogc/include/gccore.h \
  C:/devkitPro/libogc/include/ogc/dsp.h \
  C:/devkitPro/libogc/include/gctypes.h \
@@ -53,8 +53,10 @@ entity.o: C:/Users/TaireruB/Documents/UntitledWiiGame/source/entity.cpp \
  C:/devkitPro/libogc/include/ogc/usbstorage.h \
  C:/devkitPro/libogc/include/ogc/mutex.h \
  C:/devkitPro/libogc/include/ogc/system.h \
- C:/devkitPro/libogc/include/ogc/wiilaunch.h
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/entity.h:
+ C:/devkitPro/libogc/include/ogc/wiilaunch.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/transform.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/types/vector3.h
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/entity.h:
 C:/devkitPro/libogc/include/gccore.h:
 C:/devkitPro/libogc/include/ogc/dsp.h:
 C:/devkitPro/libogc/include/gctypes.h:
@@ -109,3 +111,5 @@ C:/devkitPro/libogc/include/ogc/usbstorage.h:
 C:/devkitPro/libogc/include/ogc/mutex.h:
 C:/devkitPro/libogc/include/ogc/system.h:
 C:/devkitPro/libogc/include/ogc/wiilaunch.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/transform.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/types/vector3.h:

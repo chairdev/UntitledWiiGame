@@ -1,5 +1,5 @@
 main.o: C:/Users/TaireruB/Documents/UntitledWiiGame/source/main.cpp \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/main.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/main.h \
  C:/devkitPro/portlibs/wii/include/grrlib.h \
  C:/devkitPro/libogc/include/gccore.h \
  C:/devkitPro/libogc/include/ogc/dsp.h \
@@ -71,12 +71,12 @@ main.o: C:/Users/TaireruB/Documents/UntitledWiiGame/source/main.cpp \
  C:/devkitPro/libogc/include/bte/bte.h \
  C:/devkitPro/libogc/include/bte/bd_addr.h \
  C:/devkitPro/libogc/include/asndlib.h \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/oggplayer.h \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/entity.h \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/gfx/init/warning.h \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/init.h \
- C:/Users/TaireruB/Documents/UntitledWiiGame/source/titlescreen.h
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/main.h:
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/entity.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/transform.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/types/vector3.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/main.h:
 C:/devkitPro/portlibs/wii/include/grrlib.h:
 C:/devkitPro/libogc/include/gccore.h:
 C:/devkitPro/libogc/include/ogc/dsp.h:
@@ -148,8 +148,8 @@ C:/devkitPro/libogc/include/wiiuse/wiiuse.h:
 C:/devkitPro/libogc/include/bte/bte.h:
 C:/devkitPro/libogc/include/bte/bd_addr.h:
 C:/devkitPro/libogc/include/asndlib.h:
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/oggplayer.h:
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/entity.h:
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/gfx/init/warning.h:
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/init.h:
-C:/Users/TaireruB/Documents/UntitledWiiGame/source/titlescreen.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/entity.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/transform.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/types/vector3.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h:
