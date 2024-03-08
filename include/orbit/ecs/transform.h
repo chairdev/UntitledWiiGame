@@ -1,9 +1,11 @@
 #pragma once
 
-#include "orbit/ecs/vector3.h"
+#include "orbit/math/vector3.h"
 
 class Transform {
 public:
+    Transform() = default; // Add default constructor
+
     Transform(Vector3 pos);
 
     Vector3 position;

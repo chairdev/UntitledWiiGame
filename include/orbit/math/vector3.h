@@ -27,6 +27,9 @@ public:
     float magnitude() const;
     Vector3 normalize() const;
 
+    // Static methods
+    static Vector3 zero();
+
 private:
     float m_x;
     float m_y;

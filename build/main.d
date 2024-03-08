@@ -74,7 +74,7 @@ main.o: C:/Users/TaireruB/Documents/UntitledWiiGame/source/main.cpp \
  C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h \
  C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/entity.h \
  C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/transform.h \
- C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/types/vector3.h \
+ C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/math/vector3.h \
  C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h
 C:/Users/TaireruB/Documents/UntitledWiiGame/include/main.h:
 C:/devkitPro/portlibs/wii/include/grrlib.h:
@@ -151,5 +151,5 @@ C:/devkitPro/libogc/include/asndlib.h:
 C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h:
 C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/entity.h:
 C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/transform.h:
-C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/ecs/types/vector3.h:
+C:/Users/TaireruB/Documents/UntitledWiiGame/include/orbit/math/vector3.h:
 C:/Users/TaireruB/Documents/UntitledWiiGame/include/oggplayer.h:

@@ -39,4 +39,8 @@ public:
         float mag = magnitude();
         return Vector3(x / mag, y / mag, z / mag);
     }
+
+    static Vector3 zero() {
+        return Vector3(0, 0, 0);
+    }
 };
